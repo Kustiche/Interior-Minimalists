@@ -1,5 +1,5 @@
 .utility {
-	padding: 60px;
+	padding: 60px 0;
 
 	&__wrap {
 		display: flex;
@@ -75,6 +75,8 @@
 	}
 
 	&__link {
+		display: flex;
+		align-items: center;
 		text-transform: uppercase;
 		cursor: pointer;
 
