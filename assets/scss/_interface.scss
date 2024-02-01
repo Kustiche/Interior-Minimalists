@@ -1,7 +1,6 @@
 .title {
 	font-family: Inter, sans-serif;
 	font-weight: 500;
-	font-style: normal;
 	font-size: 40px;
 	line-height: 46px;
 	text-transform: uppercase;
@@ -10,10 +9,28 @@
 .heading {
 	font-family: Inter, sans-serif;
 	font-weight: 500;
-	font-style: normal;
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: uppercase;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid var(--gray-color);
+	padding: 27px 77px;
+	width: 100%;
+	max-width: 365px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+
+	&__icon {
+		width: 15px;
+		height: 15px;
+	}
 }
 
 .bid {
@@ -21,25 +38,6 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-
-	&__link {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		border: 1px solid var(--gray-color);
-		padding: 27px 77px;
-		width: 100%;
-		max-width: 365px;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 22px;
-		text-transform: uppercase;
-	}
-
-	&__icon {
-		width: 15px;
-		height: 15px;
-	}
 
 	&__subinner {
 		display: flex;
