@@ -1,5 +1,5 @@
 .utility {
-	padding: 60px;
+	padding: 60px 0;
 
 	&__wrap {
 		display: flex;
@@ -42,7 +42,7 @@
 			width: 100%;
 		}
 
-		&:first-child {
+		&--first {
 			&::before {
 				content: '';
 				position: absolute;
@@ -59,11 +59,6 @@
 		max-width: 520px;
 	}
 
-	&__link {
-		text-transform: uppercase;
-		cursor: pointer;
-	}
-
 	&__text-link {
 		position: relative;
 		margin-right: 16px;
@@ -75,6 +70,21 @@
 			bottom: 0;
 			border-top: 1px solid var(--dark-color);
 			width: 100%;
+			transition: all 0.4s;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&:hover .utility__text-link {
+			&::after {
+				left: 50%;
+				width: 0;
+			}
 		}
 	}
 
