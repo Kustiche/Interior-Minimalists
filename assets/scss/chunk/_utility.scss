@@ -5,12 +5,26 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
+
+		@media screen and (max-width: 768px) {
+			align-items: center;
+		}
 	}
 
 	&__title {
 		margin: 0;
 		margin-right: 90px;
 		margin-bottom: 70px;
+		text-align: center;
+
+		@media screen and (max-width: 768px) {
+			margin-right: 0;
+			margin-bottom: 50px;
+		}
+
+		@media screen and (max-width: 425px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__inner {
@@ -19,6 +33,10 @@
 		justify-content: space-between;
 		margin-bottom: 60px;
 		width: 100%;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__heading {
@@ -51,12 +69,52 @@
 				border-top: 1px solid var(--silver-color);
 				width: 100%;
 			}
+
+			@media screen and (max-width: 768px) {
+				&::before {
+					top: -10px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 1130px) {
+			max-width: 640px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			max-width: 520px;
+		}
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 10px;
+			max-width: 360px;
+
+			&::after {
+				bottom: -20px;
+			}
+		}
+
+		@media screen and (max-width: 560px) {
+			max-width: 230px;
+		}
+
+		@media screen and (max-width: 425px) {
+			max-width: 160px;
 		}
 	}
 
 	&__text {
 		margin: 0;
 		max-width: 520px;
+
+		@media screen and (max-width: 1130px) {
+			max-width: 420px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			max-width: 360px;
+		}
 	}
 
 	&__text-link {
@@ -75,6 +133,7 @@
 	}
 
 	&__link {
+		@include adaptive-font(16, 12);
 		display: flex;
 		align-items: center;
 		text-transform: uppercase;
@@ -86,11 +145,19 @@
 				width: 0;
 			}
 		}
+
+		@media screen and (min-width: 1024px) {
+			font-size: 16px;
+		}
 	}
 
 	&__icon {
 		width: 13px;
 		height: 13px;
 		stroke: var(--gray-color);
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 30px 0;
 	}
 }
