@@ -1,17 +1,24 @@
 .title {
+	@include adaptive-font(40, 22);
 	font-family: Inter, sans-serif;
 	font-weight: 500;
-	font-size: 40px;
-	line-height: 46px;
+	line-height: 115%;
 	text-transform: uppercase;
+
+	@media screen and (min-width: 1024px) {
+		font-size: 40px;
+	}
 }
 
 .heading {
+	@include adaptive-font(16, 12);
 	font-family: Inter, sans-serif;
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 20px;
 	text-transform: uppercase;
+
+	@media screen and (min-width: 1024px) {
+		font-size: 16px;
+	}
 }
 
 .link {
