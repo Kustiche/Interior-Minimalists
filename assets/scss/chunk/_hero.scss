@@ -8,7 +8,6 @@
 		font-weight: 500;
 		font-size: 57px;
 		text-align: center;
-		text-align: right;
 		text-transform: uppercase;
 	}
 
@@ -50,10 +49,6 @@
 		margin-bottom: 15px;
 	}
 
-	&__list-socials {
-		min-width: 365px;
-	}
-
 	&__card {
 		max-width: 365px;
 	}
@@ -61,32 +56,5 @@
 	&__icon {
 		width: 15px;
 		height: 15px;
-	}
-}
-
-.list-socials {
-	&__icon {
-		width: 15px;
-		height: 15px;
-	}
-
-	&__item {
-		border-top: 1px solid var(--silver-color);
-	}
-
-	&__item:last-child {
-		border-bottom: 1px solid var(--silver-color);
-	}
-
-	&__link {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 18px 40px;
-	}
-
-	&__text {
-		font-weight: 400;
-		font-size: 24px;
 	}
 }

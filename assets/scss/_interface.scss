@@ -44,7 +44,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	justify-content: flex-end;
 	width: 100%;
+	gap: 140px;
+
+	&__link {
+		@media screen and (max-width: 1130px) {
+			padding: 20px 30px;
+			max-width: 265px;
+		}
+	}
 
 	&__subinner {
 		display: flex;
@@ -56,11 +65,19 @@
 	&__heading {
 		margin: 0;
 		margin-bottom: 10px;
+
+		@media screen and (max-width: 1024px) {
+			text-align: center;
+		}
 	}
 
 	&__choice {
 		font-size: 12px;
 		line-height: 15px;
+
+		@media screen and (max-width: 1024px) {
+			margin: 0 auto;
+		}
 	}
 
 	&__number {
@@ -82,5 +99,47 @@
 				width: 0;
 			}
 		}
+	}
+
+	@media screen and (max-width: 1130px) {
+		gap: 10px;
+		align-items: end;
+	}
+
+	@media screen and (max-width: 1024px) {
+		flex-direction: column;
+		align-items: center;
+		margin-left: auto;
+		max-width: 330px;
+		gap: 15px;
+	}
+}
+
+.list-socials {
+	min-width: 365px;
+
+	&__icon {
+		width: 15px;
+		height: 15px;
+	}
+
+	&__item {
+		border-top: 1px solid var(--silver-color);
+	}
+
+	&__item:last-child {
+		border-bottom: 1px solid var(--silver-color);
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 18px 40px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 24px;
 	}
 }
