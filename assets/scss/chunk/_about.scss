@@ -36,6 +36,14 @@
 		height: auto;
 	}
 
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 505px;
+	}
+
 	&__heading {
 		margin: 0;
 		margin-bottom: 30px;
