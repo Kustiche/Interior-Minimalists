@@ -21,6 +21,7 @@ export const html = () => {
 		.pipe(
 			typograf({
 				locale: ['ru', 'en-US'],
+				safeTags: [['<no-typography>', '</no-typography>']],
 			}),
 		)
 		.pipe(app.plugins.replace(/@img\//g, 'img/'))

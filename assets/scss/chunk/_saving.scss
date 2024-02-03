@@ -3,12 +3,21 @@
 
 	&__title {
 		margin-bottom: 50px;
-		text-align: center;
+		max-width: 870px;
+
+		@media screen and (max-width: 992px) {
+			max-width: 100%;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 425px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__wrap {
 		display: flex;
-		align-items: end;
+		align-items: flex-end;
 		justify-content: space-between;
 		gap: 20px;
 
