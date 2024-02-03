@@ -13,13 +13,22 @@
 
 	&__title {
 		margin: 0;
-		margin-right: 90px;
+		margin-right: 5px;
 		margin-bottom: 70px;
-		text-align: center;
+		max-width: 865px;
+
+		@media screen and (max-width: 1130px) {
+			max-width: 635px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			max-width: 515px;
+		}
 
 		@media screen and (max-width: 768px) {
 			margin-right: 0;
 			margin-bottom: 50px;
+			text-align: center;
 		}
 
 		@media screen and (max-width: 425px) {
