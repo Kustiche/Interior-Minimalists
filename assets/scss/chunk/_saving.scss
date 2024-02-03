@@ -3,7 +3,16 @@
 
 	&__title {
 		margin-bottom: 50px;
-		text-align: center;
+		max-width: 870px;
+
+		@media screen and (max-width: 992px) {
+			max-width: 100%;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 425px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__wrap {
