@@ -78,7 +78,9 @@
 	}
 
 	&__link {
-		margin-bottom: 20px;
+		@media screen and (max-width: 905px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__messengers {
