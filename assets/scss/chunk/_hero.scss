@@ -3,12 +3,18 @@
 	padding-top: 30px;
 
 	&__main-title {
+		@include adaptive-font(57, 22);
 		margin: 0;
 		margin-bottom: 40px;
+		font-family: Inter, sans-serif;
 		font-weight: 500;
-		font-size: 57px;
-		text-align: center;
+		line-height: 115%;
+		text-align: right;
 		text-transform: uppercase;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 57px;
+		}
 	}
 
 	&__wrapper {

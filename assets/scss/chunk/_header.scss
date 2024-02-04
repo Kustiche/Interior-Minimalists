@@ -8,10 +8,10 @@
 		gap: 5px;
 	}
 
-	&__logo-img {
+	&__logo {
+		margin-bottom: 35px;
 		width: 300px;
 		height: auto;
-		color: var(--dark-color);
 
 		@media screen and (max-width: 992px) {
 			width: 270px;
