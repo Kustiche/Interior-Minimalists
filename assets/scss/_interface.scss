@@ -54,7 +54,6 @@
 .bid {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	justify-content: flex-end;
 	width: 100%;
 	gap: 140px;
@@ -78,6 +77,10 @@
 
 		@media screen and (max-width: 1024px) {
 			text-align: center;
+		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 5px;
 		}
 	}
 
