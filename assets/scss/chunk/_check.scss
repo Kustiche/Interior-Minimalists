@@ -43,17 +43,19 @@
 		&--further {
 			margin-bottom: 50px;
 
-			@media screen and (max-width: 425px) {
+			@media screen and (max-width: 768px) {
 				margin-bottom: 30px;
 			}
 		}
 
-		@media screen and (max-width: 425px) {
+		@media screen and (max-width: 768px) {
 			margin-bottom: 15px;
 		}
 	}
 
 	&__bid {
+		justify-content: space-between;
+
 		@media screen and (max-width: 1130px) {
 			justify-content: flex-start;
 		}
