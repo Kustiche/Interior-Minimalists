@@ -35,6 +35,7 @@
 	font-size: 18px;
 	line-height: 22px;
 	text-transform: uppercase;
+	transition: background-color 0.4s;
 
 	&__text {
 		max-width: 175px;
@@ -43,6 +44,10 @@
 	&__icon {
 		width: 15px;
 		height: 15px;
+	}
+
+	&:hover {
+		background-color: rgb(132 132 132 / 20%);
 	}
 
 	@media screen and (max-width: 425px) {
@@ -145,23 +150,28 @@
 		border-bottom: 1px solid var(--silver-color);
 	}
 
+	&__text {
+		@include adaptive-font(24, 16);
+		font-weight: 400;
+		transition: transform 0.4s;
+
+		@media screen and (min-width: 1120px) {
+			font-size: 24px;
+		}
+	}
+
 	&__link {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 18px 40px;
 
+		&:hover .list-socials__text {
+			transform: scale(0.9);
+		}
+
 		@media screen and (max-width: 425px) {
 			padding: 13px 40px;
-		}
-	}
-
-	&__text {
-		@include adaptive-font(24, 16);
-		font-weight: 400;
-
-		@media screen and (min-width: 1120px) {
-			font-size: 24px;
 		}
 	}
 }

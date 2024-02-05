@@ -15,11 +15,20 @@
 		margin: 0;
 		margin-right: 90px;
 		margin-bottom: 70px;
-		text-align: center;
+
+		@media screen and (max-width: 1130px) {
+			margin-right: 0;
+			max-width: 640px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			max-width: 520px;
+		}
 
 		@media screen and (max-width: 768px) {
-			margin-right: 0;
 			margin-bottom: 50px;
+			max-width: 420px;
+			text-align: center;
 		}
 
 		@media screen and (max-width: 425px) {
@@ -41,6 +50,15 @@
 
 	&__heading {
 		margin: 0;
+		max-width: 185px;
+
+		@media screen and (max-width: 768px) {
+			max-width: 155px;
+		}
+
+		@media screen and (max-width: 375px) {
+			max-width: 120px;
+		}
 	}
 
 	&__subinner {
@@ -120,6 +138,7 @@
 	&__text-link {
 		position: relative;
 		margin-right: 16px;
+		max-width: 100px;
 
 		&::after {
 			content: '';

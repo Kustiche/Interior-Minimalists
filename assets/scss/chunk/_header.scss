@@ -32,7 +32,25 @@
 
 	&__link {
 		@include adaptive-font(24, 12);
+		position: relative;
 		font-family: Inter, sans-serif;
 		font-weight: 400;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: -50%;
+			border-top: 2px solid var(--dark-color);
+			width: 0;
+			transition: all 0.4s;
+		}
+
+		&:hover {
+			&::after {
+				left: 0;
+				width: 100%;
+			}
+		}
 	}
 }
