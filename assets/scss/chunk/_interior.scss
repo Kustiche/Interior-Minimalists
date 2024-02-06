@@ -1,6 +1,4 @@
 .interior {
-	padding: 60px 0;
-
 	&__wrap {
 		display: flex;
 		flex-direction: column;
@@ -105,9 +103,5 @@
 	&__img {
 		width: 100%;
 		height: auto;
-	}
-
-	@media screen and (max-width: 768px) {
-		padding: 30px 0;
 	}
 }

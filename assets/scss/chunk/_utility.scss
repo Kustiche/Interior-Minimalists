@@ -1,6 +1,4 @@
 .utility {
-	padding: 60px 0;
-
 	&__wrap {
 		display: flex;
 		flex-direction: column;
@@ -173,9 +171,5 @@
 	&__icon {
 		width: 13px;
 		height: 13px;
-	}
-
-	@media screen and (max-width: 768px) {
-		padding: 30px 0;
 	}
 }

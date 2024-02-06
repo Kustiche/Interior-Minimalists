@@ -1,5 +1,5 @@
 .hero {
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-bottom: 60px;
 
 	&__main-title {
@@ -113,5 +113,10 @@
 	&__icon {
 		width: 15px;
 		height: 15px;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-top: 20px;
+		padding-bottom: 30px;
 	}
 }
