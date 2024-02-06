@@ -42,8 +42,17 @@
 
 	&__logo {
 		margin-bottom: 35px;
-		width: 260px;
-		height: auto;
+		width: 100%;
+		height: 56px;
+		max-width: 260px;
+
+		@media screen and (max-width: 500px) {
+			height: 40px;
+		}
+
+		@media screen and (max-width: 425px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__address {
@@ -140,6 +149,10 @@
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		@media screen and (max-width: 425px) {
+			margin-bottom: 10px;
 		}
 	}
 
