@@ -139,6 +139,11 @@
 		max-width: 330px;
 		gap: 15px;
 	}
+
+	@media screen and (max-width: 560px) {
+		justify-content: center;
+		max-width: 100%;
+	}
 }
 
 .list-socials {
