@@ -104,4 +104,12 @@
 		width: 100%;
 		height: auto;
 	}
+
+	@media screen and (max-width: 992px) {
+		padding: 30px 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 30px 0;
+	}
 }

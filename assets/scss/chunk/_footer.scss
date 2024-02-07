@@ -199,6 +199,11 @@
 		fill: var(--gray-color);
 	}
 
+	@media screen and (max-width: 992px) {
+		padding-top: 55px;
+		padding-bottom: 20px;
+	}
+
 	@media screen and (max-width: 768px) {
 		padding-top: 55px;
 		padding-bottom: 20px;

@@ -72,6 +72,13 @@
 	gap: 140px;
 
 	&__link {
+		@include adaptive-font(16, 14);
+
+		@media screen and (max-width: 1130px) {
+			padding: 20px 30px;
+			max-width: 265px;
+		}
+
 		@media screen and (max-width: 1130px) {
 			padding: 20px 30px;
 			max-width: 265px;

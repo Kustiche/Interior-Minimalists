@@ -14,15 +14,8 @@
 		margin-left: auto;
 		max-width: 860px;
 
-		@media screen and (max-width: 1290px) {
-			max-width: 735px;
-		}
-
-		@media screen and (max-width: 1024px) {
-			max-width: 605px;
-		}
-
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 1400px) {
+			margin-left: 0;
 			text-align: center;
 		}
 
@@ -65,6 +58,10 @@
 		align-items: flex-start;
 		width: 100%;
 		max-width: 505px;
+
+		@media screen and (max-width: 905px) {
+			max-width: 365px;
+		}
 	}
 
 	&__dignity {
@@ -97,7 +94,7 @@
 
 		@media screen and (max-width: 905px) {
 			position: inherit;
-			max-width: 505px;
+			max-width: 365px;
 		}
 	}
 
@@ -108,5 +105,13 @@
 		@media screen and (max-width: 425px) {
 			margin-bottom: 10px;
 		}
+	}
+
+	@media screen and (max-width: 992px) {
+		padding: 30px 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 30px 0;
 	}
 }
