@@ -26,8 +26,8 @@
 		gap: 15px;
 		width: 100%;
 
-		@media screen and (max-width: 992px) {
-			justify-content: space-between;
+		@media screen and (max-width: 1050px) {
+			justify-content: space-evenly;
 		}
 
 		@media screen and (max-width: 768px) {
@@ -51,7 +51,7 @@
 		width: 100%;
 		gap: 10px;
 
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 1050px) {
 			flex-wrap: wrap;
 			max-width: 365px;
 		}
@@ -101,6 +101,7 @@
 	}
 
 	&__link {
+		@include adaptive-font(16, 14);
 		margin: 0 auto;
 		cursor: pointer;
 
@@ -113,5 +114,9 @@
 	&__icon {
 		width: 15px;
 		height: 15px;
+	}
+
+	@media screen and (max-width: 992px) {
+		padding: 15px 0 30px;
 	}
 }
