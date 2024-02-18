@@ -1,5 +1,5 @@
 .hero {
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-bottom: 60px;
 
 	&__main-title {
@@ -101,14 +101,7 @@
 	}
 
 	&__link {
-		@include adaptive-font(16, 14);
 		margin: 0 auto;
-		cursor: pointer;
-
-		@media screen and (max-width: 1130px) {
-			padding: 20px 30px;
-			max-width: 265px;
-		}
 	}
 
 	&__icon {
@@ -118,5 +111,9 @@
 
 	@media screen and (max-width: 992px) {
 		padding: 15px 0 30px;
+	}
+	@media screen and (max-width: 768px) {
+		padding-top: 20px;
+		padding-bottom: 15px;
 	}
 }
